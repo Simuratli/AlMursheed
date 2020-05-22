@@ -99,6 +99,9 @@ $bg-color: #f7f7f7;
             .loginbuttons {
                 position: relative;
                 top: 12px;
+                a{
+                    margin-right: 10px;
+                }
                 .loginbtn {
                     border-radius: 2px !important;
                     background-color: white;
@@ -110,7 +113,7 @@ $bg-color: #f7f7f7;
                     padding-bottom: 5px;
                     color: $main-color;
                     margin-right: 10px;
-                    border-radius: 5px;
+                    border-radius: 5px; 
                 }
                 .registerbtn {
                     border-radius: 2px !important;

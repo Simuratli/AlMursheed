@@ -3,7 +3,8 @@ import './header-center.component.scss'
 import { Link } from "react-router-dom";
 import BtnDark from '../../button-dark/button-dark'
 import BtnLight from '../../button-light/button-light'
-
+import CurrencySelectbox from '../../currency-selectbox/currency-selectbox.component'
+import LangSelectbox from '../../language-nav-selectbox/language-nav-selectbox.component'
 
 const HeaderCenter = () =>{
 
@@ -28,28 +29,17 @@ const HeaderCenter = () =>{
             <div className="rightContent">
                 <div className="currency">
                     <span className="currencyText">Valyuta</span>
-                    <form>
-                        <select>
-                            <option value="0">USD</option>
-                            <option value="1">EURO</option>
-                            <option value="2">TRY</option>
-                        </select>
-                    </form>
+                    <CurrencySelectbox />
                 </div>
                 <div className="language">
                     <span className="langText">Dil</span>
                     <form>
-                            <select>
-                                    <option value="0">English</option>
-                                   <option value="1">Turkey</option>
-                                    <option value="2">Germany</option>
-                                    <option value="3">France</option>
-                            </select>
+                    <LangSelectbox />
                     </form>
                 </div>
                 <div className="loginbuttons">
-                    <Link to='/login' className=" "><BtnLight name='Daxi Ol'/></Link>
-                    <Link to="/register" className=" "><BtnDark name='Qeydiyyat'/></Link>
+                    <Link to='/login' ><BtnLight name='Daxi Ol'/></Link>
+                    <Link to="/register" ><BtnDark name='Qeydiyyat'/></Link>
                 </div>
                 <div id="hamburger" onClick={toggleNav} className="barIcon">
                     <p className="line"></p>

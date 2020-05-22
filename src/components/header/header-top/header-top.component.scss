@@ -1,8 +1,7 @@
 $main-color:#0b8071;
 $bg-color: #f7f7f7;
 .topNav {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding:25px 0;
     height: 20px;
     width: 100%;
     background-color: $bg-color !important;
@@ -30,6 +29,8 @@ $bg-color: #f7f7f7;
                 .dropLogBtn,
                 .support {
                     display: inline-block;
+                    position: relative;
+                    top: -10px;
                 }
                 .profile {
                     float: right;
